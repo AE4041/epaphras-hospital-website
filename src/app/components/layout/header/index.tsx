@@ -1,17 +1,15 @@
 "use client";
-import Link from "next/link";
+
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { useTheme } from "next-themes";
-import { signOut, useSession } from "next-auth/react";
-import Image from "next/image";
+import { signOut } from "next-auth/react";
 import Logo from "./logo";
 import HeaderLink from "./navigation/HeaderLink";
 import MobileHeaderLink from "./navigation/MobileHeaderLink";
 
 const Header: React.FC = () => {
   const pathUrl = usePathname();
-  const { data: session } = useSession();
   const { theme, setTheme } = useTheme();
 
   const [data, setData] = useState<any[]>([]);
@@ -80,8 +78,8 @@ const Header: React.FC = () => {
     fetchData()
   }, [])
 
-  console.log("data",data);
-  
+  console.log("data", data);
+
 
 
   const handleSignOut = () => {
@@ -97,7 +95,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md flex items-center justify-between px-4 py-6">
         <Logo />
         <nav className="hidden lg:flex flex-grow items-center justify-center space-x-6">
-          {data.map((item:any, index:any) => (
+          {data.map((item: any, index: any) => (
             <HeaderLink key={index} item={item} />
           ))}
         </nav>
@@ -120,43 +118,6 @@ const Header: React.FC = () => {
               <path d="M16.6111 15.855C17.591 15.1394 18.3151 14.1979 18.7723 13.1623C16.4824 13.4065 14.1342 12.4631 12.6795 10.4711C11.2248 8.47905 11.0409 5.95516 11.9705 3.84818C10.8449 3.9685 9.72768 4.37162 8.74781 5.08719C5.7759 7.25747 5.12529 11.4308 7.29558 14.4028C9.46586 17.3747 13.6392 18.0253 16.6111 15.855Z" />
             </svg>
           </button>
-
-          {user?.user || session?.user ? (
-            <>
-              <div className="relative group flex items-center justify-center">
-                <Image src={"/images/avatar/avatar_1.jpg"} alt="avatar" width={35} height={35} className="rounded-full" />
-                <p
-                  className="absolute w-fit text-sm font-medium text-center z-10 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity duration-200 bg-primary text-white py-1 px-2 min-w-28 rounded-lg shadow-2xl top-full left-1/2 transform -translate-x-1/2 mt-3"
-                >
-                  {user?.user || session?.user?.name}
-                </p>
-              </div>
-              <button
-                onClick={() => handleSignOut()}
-                className="hidden lg:block bg-transparent border border-primary text-primary px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white"
-              >
-                Sign Out
-              </button>
-            </>
-          ) : (
-            <>
-              <Link
-                href="/signin"
-                className="hidden lg:block bg-transparent border border-primary text-primary px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white"
-              >
-                Sign In
-              </Link>
-
-              <Link
-                href="/signup"
-                className="hidden lg:block bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700"
-              >
-                Sign Up
-              </Link>
-            </>
-          )}
-
-
 
           <button
             onClick={() => setNavbarOpen(!navbarOpen)}
@@ -192,42 +153,9 @@ const Header: React.FC = () => {
           </button>
         </div>
         <nav className="flex flex-col items-start p-4">
-          {data.map((item:any, index:any) => (
+          {data.map((item: any, index: any) => (
             <MobileHeaderLink key={index} item={item} />
           ))}
-          <div className="mt-4 flex flex-col space-y-4 w-full">
-            {user?.user || session?.user ? (
-              <>
-                <button
-                  className="bg-transparent border border-primary text-primary px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white"
-                  onClick={() => handleSignOut()}
-                >
-                  Sign Out
-                </button>
-              </>
-            ) : (
-              <>
-                <Link
-                  href="/signin"
-                  className="bg-transparent border border-primary text-primary px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white"
-                  onClick={() => {
-                    setNavbarOpen(false);
-                  }}
-                >
-                  Sign In
-                </Link>
-                <Link
-                  href="/signup"
-                  className="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700"
-                  onClick={() => {
-                    setNavbarOpen(false);
-                  }}
-                >
-                  Sign Up
-                </Link>
-              </>
-            )}
-          </div>
         </nav>
       </div>
     </header>

@@ -9,33 +9,33 @@ import Footer from "./components/layout/footer";
 import ScrollToTop from "./components/scroll-to-top";
 import Header from "./components/layout/header";
 import SessionProviderComp from "./provider/SessionProviderComp";
+import { getServerSession } from "next-auth";
+// import { authOptions } from "@/lib/auth";
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-  session,
 }: Readonly<{
   children: React.ReactNode;
-  session:any
 }>) {
+  // const session = await getServerSession(authOptions);
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${dmsans.className}`}>
-      <AppContextProvider>
-      <SessionProviderComp session={session}>
-        <ThemeProvider
-          attribute="class"
-          enableSystem={false}
-          defaultTheme="light"
-        >
-          <Aoscompo>
-            <Header />
-            <NextTopLoader />
-            {children}
-            <Footer />
-          </Aoscompo>
-          <ScrollToTop />
-        </ThemeProvider>
-        </SessionProviderComp>
+        <AppContextProvider>
+          <ThemeProvider
+            attribute="class"
+            enableSystem={false}
+            defaultTheme="light"
+          >
+            <Aoscompo>
+              <Header />
+              <NextTopLoader />
+              {children}
+              <Footer />
+            </Aoscompo>
+            <ScrollToTop />
+          </ThemeProvider>
         </AppContextProvider>
       </body>
     </html>

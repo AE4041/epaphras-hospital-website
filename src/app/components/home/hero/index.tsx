@@ -210,35 +210,35 @@ const Hero = () => {
             <div className="flex flex-col justify-start ml-4 mt-8 mb-12 gap-3">
               <div className="flex space-x-2" data-aos="fade-left">
                 <svg
-                  className="w-6 h-6 text-blue-500"
+                  className="w-6 h-6 text-green-500"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path d="M12 .587l3.668 7.431L24 9.763l-6 5.847L19.336 24 12 20.019 4.664 24 6 15.61 0 9.763l8.332-1.745z" />
                 </svg>
                 <svg
-                  className="w-6 h-6 text-blue-500"
+                  className="w-6 h-6 text-green-500"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path d="M12 .587l3.668 7.431L24 9.763l-6 5.847L19.336 24 12 20.019 4.664 24 6 15.61 0 9.763l8.332-1.745z" />
                 </svg>
                 <svg
-                  className="w-6 h-6 text-blue-500"
+                  className="w-6 h-6 text-green-500"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path d="M12 .587l3.668 7.431L24 9.763l-6 5.847L19.336 24 12 20.019 4.664 24 6 15.61 0 9.763l8.332-1.745z" />
                 </svg>
                 <svg
-                  className="w-6 h-6 text-blue-500"
+                  className="w-6 h-6 text-green-500"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path d="M12 .587l3.668 7.431L24 9.763l-6 5.847L19.336 24 12 20.019 4.664 24 6 15.61 0 9.763l8.332-1.745z" />
                 </svg>
                 <svg
-                  className="w-6 h-6 text-blue-500"
+                  className="w-6 h-6 text-green-500"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
