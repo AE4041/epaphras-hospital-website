@@ -32,7 +32,7 @@ export default function Calculator() {
             Sometimes by accident, sometimes chunks as necessary making this the
             first true generator on the Internet.
           </p>
-          <div className="relative-container">
+          {/* <div className="relative-container">
             <div className="main-div mb-16 pt-8">
               <div className="child-container flex w-full justify-between">
                 <div
@@ -67,20 +67,14 @@ export default function Calculator() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="lg:w-auto w-full" data-aos="fade-right">
           <div className="bg-primary rounded-t-lg p-16 w-full">
             <p className="text-4xl text-white mb-6 font-bold flex items-center justify-center">
-              A fancy title here
+              Available 24/7
             </p>
-            <div className="flex justify-center">
-              
-            </div>
-            <div className="items-center justify-center mt-12 text-white text-lg">
-             Put some nice description here...........
-            </div>
-            
+
           </div>
           <div className="p-4 bg-blue-700 text-white text-xl rounded-b-lg">
             <p className="text-center mb-1 opacity-70">Have Questions?</p>
@@ -88,8 +82,7 @@ export default function Calculator() {
               href={"tel:+909 887 0980"}
               className="text-center font-bold inline-block w-full"
             >
-              <span className="opacity-70 !font-normal">Call us : </span>+909
-              887 0980
+              <span className="opacity-70 !font-normal">Call us : </span>+233 24 700 7817
             </Link>
           </div>
         </div>

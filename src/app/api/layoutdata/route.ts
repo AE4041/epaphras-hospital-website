@@ -3,14 +3,15 @@ import { NextResponse } from "next/server";
 const headerData = [
   { label: "Home", href: "/" },
   {
-    label: "Properties",
+    label: "Services",
     href: "#",
     submenu: [
-      { label: "Property Details", href: "/properties/properties-list/modern-apartment" },
+      { label: "Our Services", href: "/properties/properties-list/modern-apartment" },
     ],
   },
  
   { label: "Contact", href: "/contact" },
+  { label: "About Us", href: "/contact" },
 ];
 
 export const GET = async () => {
