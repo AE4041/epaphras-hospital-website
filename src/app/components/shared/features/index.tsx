@@ -22,7 +22,7 @@ export default function Features() {
                                     <div className='relative'>
                                         <Image
                                             src=""
-                                            alt="Property Image"
+                                            alt="hospital Image"
                                             height={235}
                                             width={370}
                                             style={{ width: '100%', height: 'auto' }}
@@ -34,14 +34,14 @@ export default function Features() {
                     </div>
                     <div className='flex-1 '>
                         <div className="lg:pl-20 flex flex-col justify-center h-full">
-                            <p className='mb-8 md:mb-3.75 text-4xl font-bold text-midnight_text dark:text-white' data-aos="fade-left">Why People Choose Property</p>
+                            <p className='mb-8 md:mb-3.75 text-4xl font-bold text-midnight_text dark:text-white' data-aos="fade-left">Why Choose Us</p>
                             <div className='flex mb-8 md:mb-3.75 items-center gap-8' data-aos="fade-left" data-aos-delay="100">
                                 <div className="bg-primary/20 p-4 rounded-full flex justify-center items-start">
                                     <Icon icon="line-md:beer-alt-twotone-loop" stroke='1' width="40" height="40" style={{ color: '#5e9d0c' }} />
                                 </div>
                                 <div className='flex-col'>
-                                    <p className='text-2xl mb-2'>Great Experience</p>
-                                    <p className='text-gray text-base'>Add your description here....</p>
+                                    <p className='text-2xl mb-2'>Excellent Care</p>
+                                    <p className='text-gray text-base'>We deliver high-quality, patient-centered care using modern medical practices and precision in every treatment.</p>
                                 </div>
                             </div>
 
@@ -50,8 +50,8 @@ export default function Features() {
                                     <Icon icon="line-md:beer-alt-twotone-loop" stroke='1' width="40" height="40" style={{ color: '#5e9d0c' }} />
                                 </div>
                                 <div className='flex-col'>
-                                    <p className='text-2xl mb-2'>Great Experience</p>
-                                    <p className='text-gray text-base'>Add your description here....</p>
+                                    <p className='text-2xl mb-2'>Compassionate Staff</p>
+                                    <p className='text-gray text-base'>Our dedicated team provides care with empathy, respect, and a genuine commitment to your well-being.</p>
                                 </div>
                             </div>
 
@@ -60,8 +60,8 @@ export default function Features() {
                                     <Icon icon="line-md:beer-alt-twotone-loop" stroke='1' width="40" height="40" style={{ color: '#5e9d0c' }} />
                                 </div>
                                 <div className='flex-col'>
-                                    <p className='text-2xl mb-2'>Great Experience</p>
-                                    <p className='text-gray text-base'>Add your description here....</p>
+                                    <p className='text-2xl mb-2'>Affordable Care</p>
+                                    <p className='text-gray text-base'>We provide quality healthcare at accessible prices and accept NHIS and a range of private health insurance plans.</p>
                                 </div>
                             </div>
                         </div>

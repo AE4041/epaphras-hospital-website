@@ -34,7 +34,7 @@ const ContactForm = () => {
     e.preventDefault();
     setLoader(true);
 
-    fetch("https://formsubmit.co/ajax/bhainirav772@gmail.com", {
+    fetch("https://formsubmit.co/ajax/info@epaphrashospital.com", {
       method: "POST",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({
@@ -43,7 +43,7 @@ const ContactForm = () => {
         email: formData.email,
         specialist: formData.specialist,
         date: formData.date,
-        time: formData.time
+        time: formData.time,
       }),
     })
       .then((response) => response.json())
