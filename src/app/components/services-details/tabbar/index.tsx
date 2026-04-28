@@ -75,7 +75,7 @@ export default function Tabbar() {
 
     return (
         <section className='dark:bg-darkmode'>
-            <div className='max-w-screen-xl mx-auto'>
+            {/* <div className='max-w-screen-xl mx-auto'>
                 <div className="flex flex-wrap justify-center gap-1 bg-transparent" role="tablist">
                     {tabs.map((tab) => (
                         <button
@@ -146,7 +146,7 @@ export default function Tabbar() {
                         </div>
                     ))}
                 </div>
-            </div>
+            </div> */}
         </section>
     );
 }
