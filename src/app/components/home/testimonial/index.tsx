@@ -32,7 +32,8 @@ export default function Testimonials() {
                 the attention and treatment you deserve at every step of your
                 journey with us.
               </p>
-              <p className="text-lg md:text-2xl">Bishop Dr. Otuo Acheampong</p>
+              <p className="text-lg md:text-2xl">Bishop Dr. Felix Alex Danquah</p>
+              <p className="text-lg md:text-xl mb-1">(Otuo Acheampong)</p>
               <p className="text-gray text-lg md:text-xl">CEO</p>
             </div>
           </div>
